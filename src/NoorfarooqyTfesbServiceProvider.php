@@ -1,0 +1,21 @@
+<?php
+
+namespace Noorfarooqy\Tfesb;
+
+use Illuminate\Support\ServiceProvider;
+
+class NoorfarooqyTfesbServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../config/tfesb.php' => config_path('tfesb.php'),
+        ], 'tfesb.config');
+
+    }
+
+    public function register()
+    {
+
+    }
+}

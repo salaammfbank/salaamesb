@@ -1,0 +1,24 @@
+{
+    "name": "noorfarooqy/tfesb",
+    "description": "Top Finance Bank Enterprise Service Bus Package",
+    "type": "library",
+    "require": {
+        "noorfarooqy/laravel-onfon": "^1.0"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Noorfarooqy\\Tfesb\\": "src/",
+            "Noorfarooqy\\Tfesb\\Services\\": "app/Services"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noor Abdi (Farooqy)"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laravel/laravel": "^10.2"
+    }
+}
