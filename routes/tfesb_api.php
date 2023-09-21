@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Noorfarooqy\Tfesb\ApiCustomerController;
+use Noorfarooqy\Tfesb\Controllers\ApiCustomerController;
 
 
 Route::group(['prefix' => '/api/v1/tfesb', 'as' => 'tfesb.'], function () {
