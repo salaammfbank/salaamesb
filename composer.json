@@ -9,7 +9,9 @@
     "autoload": {
         "psr-4": {
             "Noorfarooqy\\Tfesb\\": "src/",
-            "Noorfarooqy\\Tfesb\\Services\\": "app/Services"
+            "Noorfarooqy\\Tfesb\\Services\\": "app/Services",
+            "Noorfarooqy\\Tfesb\\Controllers\\": "app/Http/Controllers",
+            "Noorfarooqy\\Tfesb\\Models\\": "app/Models"
         }
     },
     "authors": [

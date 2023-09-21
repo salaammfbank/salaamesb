@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\Tfesb;
+namespace Noorfarooqy\Tfesb\Controllers;
 
 use Illuminate\Http\Request;
 use Noorfarooqy\Tfesb\Services\CustomerServices;
