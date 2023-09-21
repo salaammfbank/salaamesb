@@ -26,6 +26,7 @@ class CustomerServices extends DefaultService
 
         $data = $this->validatedData();
 
+        $this->SetEndpoints();
         $payload = [
 
             "referenceNumber" => time(),
