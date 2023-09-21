@@ -9,11 +9,11 @@ trait EsbTunnel
 {
 
     use RequestHandler;
-    public $api_url ;
+    public $api_url;
     public $username;
 
 
-    public function SendPostRequest($payload): bool | Object
+    public function SendPostRequest($payload): bool | Object | array
     {
         $this->SetEndpoints();
         $endpoint = $this->api_url . '/' . config('tfesb.tf.endpoints.customer.cif');
