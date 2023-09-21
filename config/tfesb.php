@@ -5,10 +5,10 @@ return [
 
     "tf" => [
         'auth' => [
-            'user_name' => env('tf_auth_user_name', 'user'),
+            'user_name' => env('TF_AUTH_USERNAME', 'user'),
         ],
         'endpoints' => [
-            'root' => env('tf_ep_root'),
+            'root' => env('TF_EP_ROOT'),
             'customer' => [
                 'cif' => 'GetCustomerInfo',
                 'account' => 'GetAccountInfo',
