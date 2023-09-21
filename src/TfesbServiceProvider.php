@@ -10,7 +10,7 @@ class TfesbServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/tfesb.php' => config_path('tfesb.php'),
-        ], 'tfesb.config');
+        ], 'tfesb');
     }
 
     public function register()

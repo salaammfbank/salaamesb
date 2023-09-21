@@ -20,5 +20,12 @@
     "minimum-stability": "stable",
     "require-dev": {
         "laravel/laravel": "^10.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Noorfarooqy\\Tfesb\\TfesbServiceProvider"
+            ]
+        }
     }
 }
