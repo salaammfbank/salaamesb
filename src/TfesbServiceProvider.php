@@ -11,6 +11,7 @@ class TfesbServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/tfesb.php' => config_path('tfesb.php'),
         ], 'tfesb');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/tfesb_api.php');
     }
 
     public function register()
