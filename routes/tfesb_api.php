@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Noorfarooqy\Tfesb\Controllers\ApiCustomerController;
+use Noorfarooqy\EnterpriseServiceBus\Controllers\ApiCustomerController;
 
 
-Route::group(['prefix' => '/api/v1/tfesb', 'as' => 'tfesb.'], function () {
+Route::group(['prefix' => '/api/v1/esb', 'as' => 'esb.'], function () {
 
 
     Route::group(['prefix' => '/customer', 'as' => 'customer.'], function () {

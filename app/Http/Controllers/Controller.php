@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\Tfesb\Controllers;
+namespace Noorfarooqy\EnterpriseServiceBus\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -9,5 +9,4 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
-
 }

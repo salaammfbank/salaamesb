@@ -3,12 +3,13 @@
 
 return [
 
-    "tf" => [
+    "bank_code" => "",
+    "sbu" => [
         'auth' => [
-            'user_name' => env('TF_AUTH_USERNAME', 'user'),
+            'user_name' => env('SBU_AUTH_USERNAME', 'user'),
         ],
         'endpoints' => [
-            'root' => env('TF_EP_ROOT'),
+            'root' => env('SBU_EP_ROOT'),
             'customer' => [
                 'cif' => 'GetCustomerInfo',
                 'account' => 'GetAccountInfo',

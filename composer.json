@@ -1,5 +1,5 @@
 {
-    "name": "noorfarooqy/tfesb",
+    "name": "noorfarooqy/esb",
     "description": "Top Finance Bank Enterprise Service Bus Package",
     "type": "library",
     "require": {
@@ -8,10 +8,11 @@
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Noorfarooqy\\Tfesb\\": "src/",
-            "Noorfarooqy\\Tfesb\\Services\\": "app/Services",
-            "Noorfarooqy\\Tfesb\\Controllers\\": "app/Http/Controllers",
-            "Noorfarooqy\\Tfesb\\Models\\": "app/Models"
+            "Noorfarooqy\\EnterpriseServiceBus\\": "src/",
+            "Noorfarooqy\\EnterpriseServiceBus\\Services\\": "app/Services",
+            "Noorfarooqy\\EnterpriseServiceBus\\Controllers\\": "app/Http/Controllers",
+            "Noorfarooqy\\EnterpriseServiceBus\\Models\\": "app/Models",
+            "Noorfarooqy\\EnterpriseServiceBus\\Traits\\": "app/Traits"
         }
     },
     "authors": [
@@ -26,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Noorfarooqy\\Tfesb\\TfesbServiceProvider"
+                "Noorfarooqy\\EnterpriseServiceBus\\TfesbServiceProvider"
             ]
         }
     }

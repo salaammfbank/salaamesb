@@ -1,9 +1,9 @@
 <?php
 
-namespace Noorfarooqy\Tfesb\Controllers;
+namespace Noorfarooqy\EnterpriseServiceBus\Controllers;
 
 use Illuminate\Http\Request;
-use Noorfarooqy\Tfesb\Services\CustomerServices;
+use Noorfarooqy\EnterpriseServiceBus\Services\CustomerServices;
 
 class ApiCustomerController extends Controller
 {
