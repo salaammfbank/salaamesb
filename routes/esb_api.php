@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Noorfarooqy\EnterpriseServiceBus\Controllers\ApiCustomerController;
-
+use Noorfarooqy\SalaamEsb\Controllers\ApiCustomerController;
 
 Route::group(['prefix' => '/api/v1/salaamesb', 'as' => 'salaamesb.'], function () {
 
