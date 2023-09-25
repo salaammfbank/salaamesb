@@ -16,7 +16,7 @@ trait EsbTunnelTrait
     public function SendPostRequest($payload): bool | Object | array
     {
         $this->SetEndpoints();
-        $endpoint = $this->api_url . '/' . config('esb.endpoints.customer.cif');
+        $endpoint = $this->api_url . '/' . config('salaamesb.endpoints.customer.cif');
         $response = Http::post($endpoint, $payload);
 
         if ($response->status() != 200) {
@@ -29,7 +29,7 @@ trait EsbTunnelTrait
 
     private function SetEndpoints()
     {
-        $this->api_url = config('esb.endpoints.root');
-        $this->username = config('esb.auth.user_name');
+        $this->api_url = config('salaamesb.endpoints.root');
+        $this->username = config('salaamesb.auth.user_name');
     }
 }

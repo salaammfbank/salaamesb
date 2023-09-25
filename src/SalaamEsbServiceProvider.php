@@ -1,16 +1,16 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus;
+namespace Noorfarooqy\SalaamEsb;
 
 use Illuminate\Support\ServiceProvider;
 
-class TfesbServiceProvider extends ServiceProvider
+class SalaamEsbServiceProvider extends ServiceProvider
 {
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/esb.php' => config_path('esb.php'),
-        ], 'esb');
+            __DIR__ . '/../config/salaamesb.php' => config_path('salaamesb.php'),
+        ], 'salaamesb');
         $this->loadRoutesFrom(__DIR__ . '/../routes/esb_api.php');
     }
 

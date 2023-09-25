@@ -1,6 +1,6 @@
 {
-    "name": "noorfarooqy/esb",
-    "description": "Top Finance Bank Enterprise Service Bus Package",
+    "name": "noorfarooqy/salaamesb",
+    "description": "Salaam Enterprise Service Bus Package",
     "type": "library",
     "require": {
         "noorfarooqy/laravel-onfon": "^1.0"
@@ -8,11 +8,11 @@
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Noorfarooqy\\EnterpriseServiceBus\\": "src/",
-            "Noorfarooqy\\EnterpriseServiceBus\\Services\\": "app/Services",
-            "Noorfarooqy\\EnterpriseServiceBus\\Controllers\\": "app/Http/Controllers",
-            "Noorfarooqy\\EnterpriseServiceBus\\Models\\": "app/Models",
-            "Noorfarooqy\\EnterpriseServiceBus\\Traits\\": "app/Traits"
+            "Noorfarooqy\\SalaamEsb\\": "src/",
+            "Noorfarooqy\\SalaamEsb\\Services\\": "app/Services",
+            "Noorfarooqy\\SalaamEsb\\Controllers\\": "app/Http/Controllers",
+            "Noorfarooqy\\SalaamEsb\\Models\\": "app/Models",
+            "Noorfarooqy\\SalaamEsb\\Traits\\": "app/Traits"
         }
     },
     "authors": [
@@ -27,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Noorfarooqy\\EnterpriseServiceBus\\TfesbServiceProvider"
+                "Noorfarooqy\\SalaamEsbServiceProvider\\SalaamEsbServiceProvider"
             ]
         }
     }
