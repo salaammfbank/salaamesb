@@ -27,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Noorfarooqy\\SalaamEsbServiceProvider\\SalaamEsbServiceProvider"
+                "Noorfarooqy\\SalaamEsb\\SalaamEsbServiceProvider"
             ]
         }
     }
