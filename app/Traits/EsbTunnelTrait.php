@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Traits;
+namespace Noorfarooqy\SalaamEsb\Traits;
 
 use Illuminate\Support\Facades\Http;
 use Noorfarooqy\LaravelOnfon\Traits\RequestHandler;

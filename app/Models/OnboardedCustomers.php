@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Models;
+namespace Noorfarooqy\SalaamEsb\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

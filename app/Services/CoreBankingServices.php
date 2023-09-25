@@ -1,13 +1,13 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Services;
+namespace Noorfarooqy\SalaamEsb\Services;
 
 use Noorfarooqy\LaravelOnfon\Services\DefaultService;
-use Noorfarooqy\EnterpriseServiceBus\Traits\EsbTunnelTrait;
+use Noorfarooqy\SalaamEsb\Traits\EsbTunnelTrait as TraitsEsbTunnelTrait;
 
 class CoreBankingServices extends DefaultService
 {
-    use EsbTunnelTrait;
+    use TraitsEsbTunnelTrait;
     public function GetCustomerDetails($request)
     {
         $this->request = $request;
@@ -41,5 +41,10 @@ class CoreBankingServices extends DefaultService
         $response = $this->SendPostRequest($payload);
 
         return $response;
+    }
+
+    public function QueryCustomerAccounts($payload)
+    {
+        return true;
     }
 }

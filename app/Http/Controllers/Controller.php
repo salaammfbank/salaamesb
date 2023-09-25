@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Controllers;
+namespace Noorfarooqy\SalaamEsb\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;

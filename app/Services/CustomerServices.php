@@ -1,17 +1,24 @@
 <?php
 
 
-namespace Noorfarooqy\EnterpriseServiceBus\Services;
+namespace Noorfarooqy\SalaamEsb\Services;
 
 use Noorfarooqy\LaravelOnfon\Services\DefaultService;
-use Noorfarooqy\EnterpriseServiceBus\Traits\EsbTunnelTrait;
-use Noorfarooqy\EnterpriseServiceBus\Traits\HelperTrait;
+use Noorfarooqy\SalaamEsb\Models\OnboardedCustomers;
+use Noorfarooqy\SalaamEsb\Traits\EsbTunnelTrait;
+use Noorfarooqy\SalaamEsb\Traits\HelperTrait;
 
 class CustomerServices extends DefaultService
 {
     use EsbTunnelTrait;
     use HelperTrait;
 
+
+    public function GetCustomerCifDetails($request)
+    {
+        $coreBankingServices = new CoreBankingServices();
+        return $coreBankingServices->GetCustomerDetails($request);
+    }
 
     public function createAccounts($cif_account, $override_currency = false)
     {
@@ -106,7 +113,7 @@ class CustomerServices extends DefaultService
                 $account = OnboardedCustomers::create($data);
                 return $account;
             } catch (\Throwable $th) {
-                $this->setError(env('APP_DEBUG') ? $th->getMessage() : UssdErrorCodes::ussd_e_000->value, UssdErrorCodes::ussd_e_000, [UssdErrorCodes::ussd_e_000]);
+                $this->setError(env('APP_DEBUG') ? $th->getMessage() : 'Something went wrong! Contact admins.');
                 return $this->is_json ? $this->getResponse() : false;
             }
         }

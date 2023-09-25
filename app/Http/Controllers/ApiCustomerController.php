@@ -1,15 +1,15 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Controllers;
+namespace Noorfarooqy\SalaamEsb\Controllers;
 
 use Illuminate\Http\Request;
-use Noorfarooqy\EnterpriseServiceBus\Services\CustomerServices;
+use Noorfarooqy\SalaamEsb\Services\CustomerServices;
 
 class ApiCustomerController extends Controller
 {
 
     public function GetCustomerDetails(Request $request, CustomerServices $customerServices)
     {
-        return $customerServices->GetCustomerDetails($request);
+        return $customerServices->GetCustomerCifDetails($request);
     }
 }

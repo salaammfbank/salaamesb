@@ -1,6 +1,6 @@
 <?php
 
-namespace Noorfarooqy\EnterpriseServiceBus\Traits;
+namespace Noorfarooqy\SalaamEsb\Traits;
 
 trait HelperTrait
 {
