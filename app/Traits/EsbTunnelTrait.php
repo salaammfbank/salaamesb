@@ -29,7 +29,7 @@ trait EsbTunnelTrait
 
     private function SetEndpoints()
     {
-        $this->api_url = config('salaamesb.endpoints.root');
-        $this->username = config('salaamesb.auth.user_name');
+        $this->api_url = config('salaamesb.sbu.endpoints.root');
+        $this->username = config('salaamesb.sbu.auth.user_name');
     }
 }
