@@ -16,7 +16,7 @@ trait EsbTunnelTrait
     public function SendPostRequest($payload): bool | Object | array
     {
         $this->SetEndpoints();
-        $endpoint = $this->api_url . '/' . config('salaamesb.endpoints.customer.cif');
+        $endpoint = $this->api_url . '/' . config('salaamesb.sbu.endpoints.customer.cif');
         $response = Http::post($endpoint, $payload);
 
         if ($response->status() != 200) {
