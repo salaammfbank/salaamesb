@@ -2,30 +2,13 @@
 
 namespace Noorfarooqy\SalaamEsb\Services;
 
-use Noorfarooqy\LaravelOnfon\Services\DefaultService;
 use Noorfarooqy\SalaamEsb\Traits\EsbTunnelTrait as TraitsEsbTunnelTrait;
 
-class CoreBankingServices extends DefaultService
+class CoreBankingServices implements CoreBankingInterface
 {
     use TraitsEsbTunnelTrait;
-    public function GetCustomerDetails($request)
+    public function GetCustomerDetails($data)
     {
-        $this->request = $request;
-
-        $this->rules = [
-            'account_type' => 'required|numeric',
-            'account_number' => 'required|numeric',
-            'branch_code' => 'required|numeric',
-        ];
-
-        $this->customValidate();
-
-        if ($this->has_failed) {
-            return $this->getResponse();
-        }
-
-        $data = $this->validatedData();
-
         $this->SetEndpoints();
         $payload = [
 
@@ -38,9 +21,13 @@ class CoreBankingServices extends DefaultService
 
         ];
 
-        $response = $this->SendPostRequest($payload);
+        $response = $this->SendPostRequest($payload, config('salaamesb.sbu.endpoints.customer.cif'));
 
         return $response;
+    }
+
+    public function GetAccountDetails($data)
+    {
     }
 
     public function QueryCustomerAccounts($payload)

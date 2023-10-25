@@ -3,16 +3,25 @@
     "description": "Salaam Enterprise Service Bus Package",
     "type": "library",
     "require": {
-        "noorfarooqy/laravel-onfon": "^1.0"
+        "noorfarooqy/laravel-onfon": "^1.0",
+        "laravel/sanctum": "^3.3",
+        "laravel/jetstream": "^4.0",
+        "spatie/laravel-permission": "^5.11",
+        "haruncpi/laravel-user-activity": "^1.0",
+        "laravel/fortify": "^1.18",
+        "spatie/laravel-activitylog": "^4.7"
     },
     "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Noorfarooqy\\SalaamEsb\\": "src/",
             "Noorfarooqy\\SalaamEsb\\Services\\": "app/Services",
-            "Noorfarooqy\\SalaamEsb\\Controllers\\": "app/Http/Controllers",
+            "Noorfarooqy\\SalaamEsb\\Contracts\\": "app/Contracts",
+            "Noorfarooqy\\SalaamEsb\\Http\\Controllers\\": "app/Http/Controllers",
+            "Noorfarooqy\\SalaamEsb\\Http\\Middleware\\": "app/Http/Middleware",
             "Noorfarooqy\\SalaamEsb\\Models\\": "app/Models",
-            "Noorfarooqy\\SalaamEsb\\Traits\\": "app/Traits"
+            "Noorfarooqy\\SalaamEsb\\Traits\\": "app/Traits",
+            "App\\Enums\\": "app/Enums"
         }
     },
     "authors": [

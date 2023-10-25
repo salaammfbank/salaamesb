@@ -17,3 +17,4 @@ trait HelperTrait
         return number_format(((float) $amount), 2);
     }
 }
+

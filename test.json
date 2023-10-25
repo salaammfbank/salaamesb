@@ -1,0 +1,7 @@
+a: 2: {
+    s: 12: "last_checked";i: 1696334361;s: 6: "themes";a: 1: {
+        s: 6: "arangi";a: 12: {
+            s: 6: "update";b: 0;s: 5: "theme";s: 6: "arangi";s: 4: "name";s: 6: "Arangi";s: 11: "description";s: 34: "Arangi - Organic WooCommerce Theme";s: 7: "version";s: 5: "2.0.5";s: 4: "icon";s: 56: "https://s3.envato.com/files/268265288/icon_arangi_WP.png";s: 6: "author";s: 10: "ArrowTheme";s: 10: "author_url";s: 40: "https://themeforest.net/user/arrow-theme";s: 6: "rating";d: 4.57000000000000028421709430404007434844970703125;s: 12: "rating_count";i: 21;s: 3: "url";s: 70: "https://themeforest.net/item/arangi-organic-woocommerce-theme/23610683";s: 7: "package";s: 0: "";
+        }
+    }
+}

@@ -16,6 +16,29 @@ class CustomerServices extends DefaultService
 
     public function GetCustomerCifDetails($request)
     {
+        $this->request = $request;
+
+        $this->rules = [
+            'account_type' => 'required|numeric',
+            'account_number' => 'required|numeric',
+            'branch_code' => 'required|numeric',
+        ];
+
+        $this->customValidate();
+
+        if ($this->has_failed) {
+            return $this->getResponse();
+        }
+
+        $data = $this->validatedData();
+
+        $coreBankingServices = new CoreBankingServices();
+
+        return $coreBankingServices->GetCustomerDetails($data);
+    }
+
+    public function GetAccountDetails($request)
+    {
         $coreBankingServices = new CoreBankingServices();
         return $coreBankingServices->GetCustomerDetails($request);
     }

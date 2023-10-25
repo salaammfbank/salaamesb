@@ -13,14 +13,14 @@ trait EsbTunnelTrait
     public $username;
 
 
-    public function SendPostRequest($payload): bool | Object | array
+    public function SendPostRequest($payload, $api): bool | Object | array
     {
         $this->SetEndpoints();
-        $endpoint = $this->api_url . '/' . config('salaamesb.sbu.endpoints.customer.cif');
+        $endpoint = $this->api_url . '/' . $api;
         $response = Http::post($endpoint, $payload);
 
         if ($response->status() != 200) {
-            $this->setError($response->json()['detail'] ?? 'Unknown error details', 'TFESB_001');
+            $this->setError($response->json() ?? 'Unknown error details', 'ESB_001');
             return false;
         }
 
